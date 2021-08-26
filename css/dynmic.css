@@ -101,22 +101,33 @@ section{
     font-size: 14px;
     display: block;
     font-size: italic;
-    margin-bottom: 25px;
+    margin-bottom: 14px;
 }
 .links{
-    margin: 14px;
+    display:flex;
+    justify-content: space-around;
 }
-.links a{
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    transition: 0.3s;
-filter: drop-shadow(-3px -3px 2px rgba(255,255,255,0.3))
-    drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
-    drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+.links i{
+    opacity: 0.7;
+    font-size: 20px;
+    transition: 0.2s;
+    padding: 7px;
+    border-radius: 50%;
+    background: #d4dbe8;
+    box-shadow: -11px -11px 25px rgba(255,255,255,0.35),
+    11px 13px 25px rgba(165,181,208,0.73822);
 }
- .links a:hover{
-     transform: scale(1.5);
+.links i:hover{
+    opacity: 1;
+    border-radius: 50%;
+    color: #093c79;
+    background: #d4dbe8;
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow:-11px -11px 22px rgba(255,255,255,0.524448),
+    11px 13px 22px rgba(165,181,208,0.924946),
+    inset  -11px -11px 22px rgba(255,255,255,0.692936),
+    inset 11px 11px 28px rgba(165,181,208,0.856261),;
 }
 /* for team carousel */
 @media (max-width:1442px) {
